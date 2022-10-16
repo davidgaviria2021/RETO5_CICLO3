@@ -27,7 +27,7 @@ public class Reservation {
     private Integer idReservation;
     private Date startDate;
     private Date devolutionDate;
-    private String status = "create";
+    private String status = "created"; 
 
     
     @ManyToOne

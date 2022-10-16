@@ -25,7 +25,11 @@ public class CostumeRepository {
           return extencionesCrud.findById(id);
       }
       
-      public Costume save(Costume Costume){
-          return extencionesCrud.save(Costume);
+      public Costume save(Costume costume){
+          return extencionesCrud.save(costume);
       } 
+      
+       public void delete(Costume costume){
+        extencionesCrud.delete(costume);                      
+    }
 }

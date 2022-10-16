@@ -25,8 +25,12 @@ public class CategoryRepository {
           return extencionesCrud.findById(id);
       }
       
-      public Category save(Category category){
+      public Category save(Category category){// para actualizar usamos el mismo save
           return extencionesCrud.save(category);
       }
+      
+       public void delete(Category category){
+        extencionesCrud.delete(category);                      
+    }
 }
       
